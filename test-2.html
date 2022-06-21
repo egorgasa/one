@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Build 2.0</title>
+<!--  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">-->
+<!--  <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+<!--  <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="logo">
+        <a href="">
+          <img src="assets/img/svg/logo.svg" alt="" />
+        </a>
+      </div>
+      <nav class="header-nav">
+        <ul class="header__list">
+          <li class="header-list__item link_shop">
+            <a href="">магазин</a>
+          </li>
+          <li class="header-list__item link_show">
+            <a href="">примерить</a>
+          </li>
+          <li class="header-list__item link_inventory">
+            <a href="">инвентарь</a>
+          </li>
+          <li class="header-list__item link_help">
+            <a href="">помощь</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btns">
+        <div class="header__languages dropDown">
+          <div class="header-languages__current">
+            <img src="assets/img/svg/russia.svg" alt="" />
+            <p>RU</p>
+          </div>
+          <div class="hide__items header-languages__all">
+            <div class="hide-items__wrapper languages-all__wrapper">
+              <div class="hide__item languages-all__item">
+                <a href="">
+                  <img src="assets/img/svg/russia.svg" alt="" />
+                  ru
+                </a>
+              </div>
+              <div class="hide__item languages-all__item">
+                <a href="">
+                  <img src="assets/img/svg/eng.svg" alt="" />
+                  eng
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__currency dropDown">
+          <div class="header-currency__current">
+            <p><span>₽</span> rub</p>
+          </div>
+          <div class="hide__items header-languages__all">
+            <div class="hide-items__wrapper currency-all__wrapper">
+              <div class="hide__item currency-all__item">
+                <a href=""><span>₽</span> rub </a>
+              </div>
+              <div class="hide__item currency-all__item">
+                <a href=""> <span>$ </span>usd </a>
+              </div>
+              <div class="hide__item currency-all__item">
+                <a href=""> <span>€ </span> eur </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__logIn">
+        <img src="assets/img/svg/user.svg" alt="" />
+        <p>Войти</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="page">
+        <div class="page__wrapper">
+          <div class="sidebar">
+  <div class="sidebar__wrapper">
+    <div class="sidebar__currency sidebar__item">
+      <p class="sidebar-item__title">цена</p>
+      <div class="sidebar-currency__area">
+        <div class="sidebar-currency__wrapper">
+          <div class="sidebar-currency__item">
+            <label for="₽">₽</label><input type="text" value="0.00" />
+          </div>
+          <div class="sidebar-currency__rasdel"></div>
+          <div class="sidebar-currency__item">
+            <label for="$">$</label><input type="text" value="∞" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar__types sidebar__item">
+      <p class="sidebar-item__title">Тип</p>
+      <div class="sidebar-types__area">
+        <div class="sidebar-types__item">
+          <input type="checkbox" class="custom-check" name="Ножи" id="Ножи" />
+          <label for="Ножи">Ножи</label>
+        </div>
+        <div class="sidebar-types__item">
+          <input
+            type="checkbox"
+            class="custom-check"
+            name="Пистолеты"
+            id="Пистолеты"
+          />
+          <label for="Пистолеты">Пистолеты</label>
+        </div>
+        <div class="sidebar-types__item">
+          <input type="checkbox" class="custom-check" name="Петы" id="Петы" />
+          <label for="">Петы</label>
+        </div>
+        <div class="sidebar-types__item">
+          <input type="checkbox" class="custom-check" name="сеты" id="сеты" />
+          <label for="">сеты</label>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar__rarity sidebar__item">
+      <p class="sidebar-item__title">Редкость</p>
+
+      <div class="sidebar-rarities dropDown">
+        <div class="sidebar-rarities_current">
+          <p>Показать все</p>
+        </div>
+        <div class="hide__items sidebar-rarities__all">
+          <div class="hide-items__wrapper sidebar-rarities__wrapper">
+            <div class="hide__item sidebar-rarities__item">
+              <input type="checkbox" name="chroma" id="chroma" />
+              <label for="chroma">chroma</label>
+            </div>
+            <div class="hide__item sidebar-rarities__item">
+              <span></span>
+              <input type="checkbox" id="Ancients" name="Ancients" />
+              <label for="Ancients">Ancients</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar__socials">
+      <a href="">
+        <img src="assets/img/svg/vk.svg" alt="" />
+      </a>
+      <a href="">
+        <img src="assets/img/svg/diskord.svg" alt="" />
+      </a>
+      <a href="">
+        <img src="assets/img/svg/inst.svg" alt="" />
+      </a>
+      <a href="">
+        <img src="assets/img/svg/like.svg" alt="" />
+      </a>
+    </div>
+    <div class="sidebar__img"><img src="assets/img/png/lego.png" alt="" /></div>
+  </div>
+</div>
+
+          <div class="page__area">
+            <div class="page-area__wrapper">
+              <div class="pages__statusPanel">
+                <form action="" class="form-search">
+                  <input type="text" placeholder="Поиск..." />
+                </form>
+
+                <div class="form__control form__select" data-form-dropdown="">
+                  <div
+                    class="form__options-container"
+                    data-form-dropdown-container=""
+                  >
+                    <div class="form__option" data-form-dropdown-option="">
+                      <input
+                        id="digital-strategy-header"
+                        type="radio"
+                        name="standart"
+                        value="standart"
+                      />
+                      <label for="digital-strategy-header">
+                        <img src="assets/img/svg/standart.svg" alt="" />
+
+                        По стандарту</label
+                      >
+                    </div>
+                    <div class="form__option" data-form-dropdown-option="">
+                      <input
+                        id="optimization-header"
+                        type="radio"
+                        name="cheaper"
+                        value="cheaper"
+                      />
+                      <label for="optimization-header">
+                        <img src="assets/img/svg/decr.svg" alt="" />
+
+                        Дешевле</label
+                      >
+                    </div>
+                    <div class="form__option" data-form-dropdown-option="">
+                      <input
+                        id="design-header"
+                        type="radio"
+                        name="expensive"
+                        value="expensive"
+                      />
+                      <label for="design-header">
+                        <img src="assets/img/svg/incr.svg" alt="" />
+
+                        Дороже</label
+                      >
+                    </div>
+                    <div class="form__option" data-form-dropdown-option="">
+                      <input
+                        id="design-header"
+                        type="radio"
+                        name="expensive"
+                        value="expensive"
+                      />
+                      <label for="design-header">
+                        <img src="assets/img/svg/incr.svg" alt="" />
+
+                        asdasdasdasdsaas</label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form__selected-wrapper" data-form-wrapper="">
+                    <div class="form__selected-btn">
+                      <img src="assets/img/svg/inter.svg" alt="" />
+                    </div>
+
+                    <div
+                      class="form__option-selected form__input"
+                      data-form-dropdown-selected=""
+                    >
+                      <img src="assets/img/svg/standart.svg" alt="" />
+                      По стандарту
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carts">
+                <div class="cart">
+                  <div class="cart__img">
+                    <img src="assets/img/png/cart1.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>Chroma Candleflame</p>
+                    <p>1000 ₽</p>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__img">
+                    <img src="assets/img/png/cart2.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>Chroma Darkbringer</p>
+                    <p>160 ₽</p>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__img">
+                    <img src="assets/img/png/cart3.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>Chroma Lightbringer</p>
+                    <p>160 ₽</p>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__img">
+                    <img src="assets/img/png/cart4.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>slasher</p>
+                    <p>140 ₽</p>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__img">
+                    <img src="assets/img/png/cart5.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>slasher</p>
+                    <p>140 ₽</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
